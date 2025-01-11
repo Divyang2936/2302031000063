@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Creative Writing Collaborative</title>
+    <style>/* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Container */
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header */
+        header h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff6347;
+        }
+        
+        header p {
+            text-align: center;
+            margin: 10px 0 20px;
+            font-size: 1.2rem;
+        }
+        
+        /* Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-form label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .contact-form button {
+            padding: 15px;
+            background-color: #ff6347;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-form button:hover {
+            background-color: #ff4500;
+        }
+        
+        /* Socials */
+        .contact-socials {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-socials h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-socials a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ff6347;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-socials a:hover {
+            color: #ff4500;
+        }
+        </style>
+</head>
+<body>
+    <div class="contact-container">
+        <header>
+            <h1>Contact Us</h1>
+            <p>Have a question, feedback, or just want to say hello? Reach out to us!</p>
+        </header>
+        
+        <form class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="contact-socials">
+            <h3>Connect With Us</h3>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
