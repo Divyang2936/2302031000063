@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Creative Writing Collaborative</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2a2a2a;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #2a2a2a;
+            font-size: 1.6em;
+        }
+        label {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #333;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6C5B7B;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4f3b59;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Join the Creative Writing Collaborative</h1>
+        <p style="text-align: center; font-size: 16px; color: #666;">Contribute to ongoing storytelling projects with fellow writers.</p>
+
+        <form action="submit_signup.php" method="POST">
+            
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <!-- Writing Style -->
+            <div class="form-group">
+                <label for="writing_style">Preferred Writing Style</label>
+                <input type="text" id="writing_style" name="writing_style" required placeholder="e.g., Fantasy, Sci-Fi, Mystery">
+            </div>
+
+            <!-- Bio Field -->
+            <div class="form-group">
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself as a writer"></textarea>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Why do you want to join?</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Share your reasons for wanting to collaborate"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Join Now</button>
+        </form>
+
+        <div class="footer">
+            <p>By joining, you agree to our collaborative writing guidelines and community standards.</p>
+        </div>
+    </div>
+
+</body>
+</html>

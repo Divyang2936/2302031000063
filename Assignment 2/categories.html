@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Categories - Creative Writing Collaborative</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe;
+            color: #333;
+        }
+        header {
+            background-color: #264653;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .categories {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        .categories h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .category-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .category-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #264653;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Writing Collaborative</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="./Active.html">Active Stories</a>
+            <a href="categories.html">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="categories">
+        <h2>Explore Story Categories</h2>
+        <p>Discover and contribute to stories in a variety of genres and themes.</p>
+        <div class="category-grid">
+            <div class="category-card">
+                <h3>Sci-Fi</h3>
+                <p>Explore futuristic worlds, advanced technology, and thrilling adventures.</p>
+            </div>
+            <div class="category-card">
+                <h3>Fantasy</h3>
+                <p>Dive into magical realms with wizards, dragons, and epic quests.</p>
+            </div>
+            <div class="category-card">
+                <h3>Romance</h3>
+                <p>Write about love, relationships, and heartfelt connections.</p>
+            </div>
+            <div class="category-card">
+                <h3>Horror</h3>
+                <p>Create chilling tales that send shivers down the spine.</p>
+            </div>
+            <div class="category-card">
+                <h3>Adventure</h3>
+                <p>Uncover daring journeys and heroic escapades.</p>
+            </div>
+            <div class="category-card">
+                <h3>Mystery</h3>
+                <p>Solve intriguing puzzles and uncover hidden secrets.</p>
+            </div>
+            <div class="category-card">
+                <h3>Comedy</h3>
+                <p>Lighten the mood with humorous and entertaining tales.</p>
+            </div>
+            <div class="category-card">
+                <h3>Historical Fiction</h3>
+                <p>Travel back in time and reimagine historical events.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Stories - Creative Writing Collaborative</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+        header {
+            background-color: #264653;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .active-stories {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .active-stories h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .story-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .story-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .story-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .progress-bar-container {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .progress-bar {
+            height: 10px;
+            background-color: #2a9d8f;
+            width: 70%; /* Example progress */
+        }
+        .contributors {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contributors img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #264653;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Writing Collaborative</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="./AboutUS.html">About</a>
+            <a href="./Active.html">Active Stories</a>
+            <a href="categories.html">Categories</a>
+            <a href="./Active.html">Active Stories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="active-stories">
+        <h2>Ongoing Stories</h2>
+        <p>Explore and contribute to stories currently in progress.</p>
+        <div class="story-grid">
+            <div class="story-card">
+                <h3>The Galactic Quest</h3>
+                <p>A sci-fi adventure following a group of explorers seeking a new home for humanity.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <div class="contributors">
+                    <img src="avatar1.jpg" alt="Contributor 1">
+                    <img src="avatar2.jpg" alt="Contributor 2">
+                    <img src="avatar3.jpg" alt="Contributor 3">
+                </div>
+            </div>
+            <div class="story-card">
+                <h3>Whispers in the Dark</h3>
+                <p>A chilling horror tale about a haunted mansion and its secrets.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="contributors">
+                    <img src="avatar4.jpg" alt="Contributor 1">
+                    <img src="avatar5.jpg" alt="Contributor 2">
+                </div>
+            </div>
+            <div class="story-card">
+                <h3>Romance in Bloom</h3>
+                <p>A heartwarming romance set in a small countryside town.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 40%;"></div>
+                </div>
+                <div class="contributors">
+                    <img src="avatar6.jpg" alt="Contributor 1">
+                    <img src="avatar7.jpg" alt="Contributor 2">
+                    <img src="avatar8.jpg" alt="Contributor 3">
+                    <img src="avatar9.jpg" alt="Contributor 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles - Creative Writing Collaborative</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #264653;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .profiles {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .profiles h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .profile-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .profile-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .profile-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2a9d8f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .profile-card a:hover {
+            background-color: #21867a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #264653;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Writing Collaborative</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="active_stories.html">Active Stories</a>
+            <a href="profiles.html">User Profiles</a>
+        </nav>
+    </header>
+
+    <div class="profiles">
+        <h2>User Profiles</h2>
+        <p>Explore the contributors who bring stories to life.</p>
+        <div class="profile-grid">
+            <div class="profile-card">
+                <img src="avatar1.jpg" alt="User Avatar">
+                <h3>Jane Doe</h3>
+                <p>Genre: Fantasy, Sci-Fi</p>
+                <a href="#">View Profile</a>
+            </div>
+            <div class="profile-card">
+                <img src="avatar2.jpg" alt="User Avatar">
+                <h3>John Smith</h3>
+                <p>Genre: Horror, Mystery</p>
+                <a href="#">View Profile</a>
+            </div>
+            <div class="profile-card">
+                <img src="avatar3.jpg" alt="User Avatar">
+                <h3>Alex Johnson</h3>
+                <p>Genre: Romance, Historical Fiction</p>
+                <a href="#">View Profile</a>
+            </div>
+            <div class="profile-card">
+                <img src="avatar4.jpg" alt="User Avatar">
+                <h3>Emily Davis</h3>
+                <p>Genre: Comedy, Adventure</p>
+                <a href="#">View Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
+    </footer>
+</body>
+</html>

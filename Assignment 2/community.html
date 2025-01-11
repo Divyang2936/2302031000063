@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Creative Writing Collaborative</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #264653;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .community {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .community h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .community p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .forum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .forum-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .forum-card:hover {
+            transform: scale(1.05);
+        }
+        .forum-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .forum-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .forum-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2a9d8f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .forum-card a:hover {
+            background-color: #21867a;
+        }
+        .join-section {
+            margin: 50px auto;
+            text-align: center;
+        }
+        .join-section a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e76f51;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .join-section a:hover {
+            background-color: #d65b46;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #264653;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Writing Collaborative</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="active_stories.html">Active Stories</a>
+            <a href="profiles.html">User Profiles</a>
+            <a href="community.html">Community</a>
+        </nav>
+    </header>
+
+    <div class="community">
+        <h2>Join the Community</h2>
+        <p>Engage with fellow writers, discuss ideas, and collaborate on stories in our vibrant forums.</p>
+        <div class="forum-grid">
+            <div class="forum-card">
+                <h3>Story Ideas Exchange</h3>
+                <p>Share your story concepts and get feedback from others.</p>
+                <a href="#">Join Discussion</a>
+            </div>
+            <div class="forum-card">
+                <h3>Writing Challenges</h3>
+                <p>Participate in creative writing challenges and improve your skills.</p>
+                <a href="#">View Challenges</a>
+            </div>
+            <div class="forum-card">
+                <h3>Critique Corner</h3>
+                <p>Post your work and receive constructive critiques from the community.</p>
+                <a href="#">Get Feedback</a>
+            </div>
+            <div class="forum-card">
+                <h3>Genre-Specific Groups</h3>
+                <p>Connect with writers who share your favorite genres.</p>
+                <a href="#">Explore Groups</a>
+            </div>
+        </div>
+        <div class="join-section">
+            <h3>Not a member yet?</h3>
+            <a href="#">Join the Community Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
+    </footer>
+</body>
+</html>
