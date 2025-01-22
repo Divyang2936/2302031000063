@@ -6,13 +6,21 @@
     <title>Creative Writing Collaborative</title>
     <style>
         body {
+            height: 100%;
+            width: 100%;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fdfcfb;
             color: #333;
         }
+        #main{
+            height: 100vh;
+            width: 100%;
+            /* background: #000; */
+        }
         header {
+            height: 5vh;
             background-color: #f4a261;
             padding: 20px;
             display: flex;
@@ -24,8 +32,9 @@
             color: #fff;
         }
         nav {
+            margin-right: 100px;
             display: flex;
-            gap: 15px;
+            gap: 45px;
         }
         nav a {
             color: #fff;
@@ -33,6 +42,7 @@
             font-size: 1rem;
         }
         .hero {
+            height: 30vh;
             text-align: center;
             padding: 100px 20px;
             background-color: #e9c46a;
@@ -75,48 +85,56 @@
         .feature p {
             font-size: 1rem;
         }
+        #features{
+            height: 15vh;
+            /* margin-top: 100px; */
+            /* background: #000; */
+        }
         footer {
+            height: 5.5vh;
             text-align: center;
             padding: 20px;
+            /* margin-top: 100px; */
             background-color: #264653;
             color: #fff;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Creative Writing Collaborative</h1>
-        <nav>
-            <a href="#features">Features</a>
-            <a href="./AboutUS.html">About</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./signup.html">Sign Up</a>
-        </nav>
-    </header>
+   <div id="main">
+     <header>
+    <h1>Creative Writing Collaborative</h1>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="./AboutUS.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./signup.html">Sign Up</a>
+    </nav>
+</header>
 
-    <div class="hero">
-        <h2>Unleash Your Creativity Together</h2>
-        <p>Join a vibrant community of storytellers and contribute to collaborative stories in real time.</p>
-        <a href="./YourStory.html"><button>Get Started</button></a>
+<div class="hero">
+    <h2>Unleash Your Creativity Together</h2>
+    <p>Join a vibrant community of storytellers and contribute to collaborative stories in real time.</p>
+    <a href="./YourStory.html"><button>Get Started</button></a>
+</div>
+
+<div id="features" class="features">
+    <div class="feature">
+        <h3>Collaborative Writing</h3>
+        <p>Contribute to stories with others in a seamless writing interface.</p>
     </div>
-
-    <div id="features" class="features">
-        <div class="feature">
-            <h3>Collaborative Writing</h3>
-            <p>Contribute to stories with others in a seamless writing interface.</p>
-        </div>
-        <div class="feature">
-            <h3>Dynamic Story Genres</h3>
-            <p>Explore and write in genres like sci-fi, fantasy, romance, and more.</p>
-        </div>
-        <div class="feature">
-            <h3>Community Feedback</h3>
-            <p>Engage with the community to get constructive feedback on your writing.</p>
-        </div>
+    <div class="feature">
+        <h3>Dynamic Story Genres</h3>
+        <p>Explore and write in genres like sci-fi, fantasy, romance, and more.</p>
     </div>
+    <div class="feature">
+        <h3>Community Feedback</h3>
+        <p>Engage with the community to get constructive feedback on your writing.</p>
+    </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
+</footer></div>
 </body>
 </html>

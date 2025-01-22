@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Active Stories - Creative Writing Collaborative</title>
     <style>
+        #main{
+            height: 100vh;
+            width: 100%;
+            /* background: #000; */
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,6 +18,7 @@
             color: #333;
         }
         header {
+            height: 5vh;
             background-color: #264653;
             padding: 20px;
             display: flex;
@@ -32,11 +38,13 @@
             text-decoration: none;
             font-size: 1rem;
         }
-        .active-stories {
+        .activeStories {
+            margin-top: 100px;
             padding: 50px 20px;
             text-align: center;
+            
         }
-        .active-stories h2 {
+        .activeStories h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
@@ -45,6 +53,7 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             max-width: 1200px;
+            margin-top: 100px;
             margin: 0 auto;
         }
         .story-card {
@@ -87,7 +96,9 @@
             border: 2px solid #ddd;
         }
         footer {
+            height: 5.5vh;
             text-align: center;
+            margin-top: 135px;
             padding: 20px;
             background-color: #264653;
             color: #fff;
@@ -95,7 +106,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <main>    <header>
         <h1>Creative Writing Collaborative</h1>
         <nav>
             <a href="Home.html">Home</a>
@@ -109,7 +120,7 @@
         </nav>
     </header>
 
-    <div class="active-stories">
+    <div class="activeStories">
         <h2>Ongoing Stories</h2>
         <p>Explore and contribute to stories currently in progress.</p>
         <div class="story-grid">
@@ -120,7 +131,7 @@
                     <div class="progress-bar" style="width: 60%;"></div>
                 </div>
                 <div class="contributors">
-                    <img src="avatar1.jpg" alt="Contributor 1">
+                    <img src="https://th.bing.com/th/id/OIP.m6Wz8OCQFd1N0yCcSR6lWwHaFN?rs=1&pid=ImgDetMain" alt="kontributor 1">
                     <img src="avatar2.jpg" alt="Contributor 2">
                     <img src="avatar3.jpg" alt="Contributor 3">
                 </div>
@@ -155,5 +166,7 @@
     <footer>
         <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
     </footer>
+</main>
+
 </body>
 </html>
