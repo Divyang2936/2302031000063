@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Editor - Creative Writing Collaborative</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            /* position: relative; */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/736x/73/c9/6b/73c96b470b230734c9b7e95fef4b947e.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            height: 10vh;
+            /* position: absolute; */
+            background-color: rgba(139, 46, 16, 0.9); /* Deep red tone with transparency */
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc99; /* Light orange hover effect */
+        }
+        .editor-container {
+            /* position: absolute; */
+            height: 65vh;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .editor-container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 98%;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #d9822b; /* Warm orange */
+            box-shadow: 0 0 5px #d9822b;
+            outline: none;
+        }
+        .form-group textarea {
+            height: 150px;
+            width: 98%;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+            resize: vertical;
+        }
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button-group .save-btn {
+            background-color: #d9822b; /* Warm orange */
+            color: white;
+        }
+        .button-group .save-btn:hover {
+            background-color: #bf5b1f; /* Highlight orange */
+            transform: scale(1.05);
+        }
+        .button-group .cancel-btn {
+            background-color: #bf5b1f; /* Highlight orange */
+            color: white;
+        }
+        .button-group .cancel-btn:hover {
+            background-color: #a9440e; /* Darker red */
+            transform: scale(1.05);
+        }
+        footer {
+            /* position: absolute; */
+            display: flex;
+            height: 6.4vh;
+            margin-top: 50px;
+            /* padding-bottom: 5px ; */
+            text-align: center;
+            justify-content: center;
+            /* padding-top: 10px; */
+            background-color: rgba(139, 46, 16, 0.9); /* Deep red tone with transparency */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Writing Collaborative</h1>
+        <nav>
+            <a href="home2.html">Home</a>
+            <a href="AboutUS2.html">About</a>
+            <a href="ActiveStory.html">Active Stories</a>
+            <a href="categories.html">Categories</a>
+            <a href="community.html">Community</a>
+            <a href="Users.html">Users</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">signup</a>
+        </nav>
+    </header>
+
+    <div class="editor-container">
+        <h2>Edit Your Story</h2>
+        <form>
+            <div class="form-group">
+                <label for="title">Story Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter your story title">
+            </div>
+            <div class="form-group">
+                <label for="content">Story Content</label>
+                <textarea id="content" name="content" placeholder="Write your story here..."></textarea>
+            </div>
+            <div class="button-group">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <button type="submit" class="save-btn">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Creative Writing Collaborative. All rights reserved.</p>
+    </footer>
+</body>
+</html>
