@@ -1,0 +1,6 @@
+id,season,city,date,team1,team2,toss_winner,toss_decision,winner,venue
+1,2017,Hyderabad,2017-04-05,SRH,RCB,RCB,field,SRH,Hyderabad Stadium
+2,2017,Pune,2017-04-06,MI,RPS,MI,bat,MI,Pune Stadium
+3,2018,Mumbai,2018-04-07,RCB,KXIP,RCB,field,RCB,Wankhede
+4,2019,Delhi,2019-04-08,KKR,DC,KKR,bat,KKR,Kotla
+5,2020,Dubai,2020-09-19,CSK,MI,MI,field,MI,Dubai Stadium
